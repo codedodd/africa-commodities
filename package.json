@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://codedodd.github.io/africa-commodities",
+  "homepage": "https://codedodd.github.io/africa-commodities/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
