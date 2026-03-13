@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import nacLogo from "@/assets/nac-logo.png";
 
 const Footer = () => {
   return (
@@ -9,11 +10,12 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2">
-              <div className="hidden sm:block">
-                  <span className="font-display font-semibold text-sm tracking-[.25em] uppercase text-primary dark:text-white block">
+              <div className="text-center flex flex-col items-center justify-center py-2">
+                <img src={nacLogo} alt="New Africa Commodities" className="h-12 w-auto" />
+                  <span className="font-display font-semibold text-xs tracking-[.25em] text-gray-700 uppercase dark:text-white block">
                     NEW AFRICA
                   </span>
-                  <span className="font-light text-gray-500 block text-xs tracking-[.27em]">
+                  <span className="font-semibold text-primary block text-xs tracking-[.16em] uppercase letter-spacing-[.18em]">
                     COMMODITIES
                   </span>
                 </div>

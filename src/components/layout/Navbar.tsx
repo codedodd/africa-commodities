@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import nacLogo from "@/assets/nac-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -46,11 +47,12 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <nav className="container-narrow mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2">
-          <div className="hidden sm:block">
-              <span className="font-display font-semibold text-sm tracking-[.25em] uppercase text-primary dark:text-white block">
+          <div className="text-center flex flex-col items-center justify-center py-2">
+            <img src={nacLogo} alt="New Africa Commodities" className="h-12 w-auto" />
+              <span className="font-display font-semibold text-xs tracking-[.25em] text-gray-700 uppercase dark:text-white block">
                 NEW AFRICA
               </span>
-              <span className="font-light text-gray-500 block text-xs tracking-[.27em]">
+              <span className="font-semibold text-primary block text-xs tracking-[.16em] uppercase letter-spacing-[.18em]">
                 COMMODITIES
               </span>
             </div>
